@@ -9,6 +9,7 @@ import Avatar from '@material-ui/core/Avatar';
 import PropTypes from 'prop-types';
 import { signOut, signInWithGoogle, loadUserQuestion } from '../../redux/actions/userAction';
 import './header.css';
+import Apps from '../../Apps';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,7 +59,7 @@ function Header({ dispatch }) {
                 />
               </Link>
             </div>
-
+            <Apps/>
             <div>
               <div style={{ display: 'flex' }}>
                 {!userLocalStorage?.user ? (
