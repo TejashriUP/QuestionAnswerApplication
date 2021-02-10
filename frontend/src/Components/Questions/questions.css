@@ -1,0 +1,49 @@
+main{
+    display: flex;
+    margin: 0px 60px 10px;
+}
+.main-content{
+    margin: -10px 10px 0;
+    flex: 0.70
+}
+.side-tag{
+    flex:0.3;
+    margin-top: -10px;
+}
+
+.side-bar-mobile{
+ display: none;
+}
+
+.banner{
+  background-image: url("https://trello-attachments.s3.amazonaws.com/5f9fe516582bea5ce01d06b2/5fe4df6b695a035437d32f60/bfbc936bf76decce065f9b119c63315e/bannerImage.jpg");
+  height: 250px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  
+}
+
+
+@media only screen and (max-width: 934px) {
+    main{
+      display: block;
+    }
+    .side-bar-mobile{
+      display: block;
+      margin-top: -10px;
+     }
+     .side-tag{
+       display: none;
+     }
+ 
+ }
+@media only screen and (max-width: 570px) {
+    main, .main-content{
+      margin: 0px 5px;
+    }
+    .banner{
+      display: none;
+    }
+  
+ }
